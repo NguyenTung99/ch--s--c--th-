@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập chỉ số cơ thể</title>
+</head>
+<body>
+<script>
+    let cao = parseFloat(prompt('chiều cao là'));
+    let CanNang = parseFloat(prompt('cân nặng là'));
+    let TiLe;
+    TiLe = CanNang / (cao * cao);
+    alert(TiLe);
+    if (TiLe < 18.5) {
+        alert('UnderWeight');
+    } else if (TiLe >= 18.5 && TiLe < 25.0) {
+        alert('nomal');
+    } else if (TiLe >= 25.0 && TiLe < 30) {
+        alert('Overweight');
+    } else {
+        alert('Obese');
+    }
+</script>
+</body>
+</html>
